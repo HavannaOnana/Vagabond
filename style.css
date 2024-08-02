@@ -1,0 +1,50 @@
+body{
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+/*navbar */
+#navbar{
+  display: flex;
+  justify-content: end;
+  width: 95vw;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+#navbar a{
+  margin-left: 3%;
+  text-decoration: none;
+  color: black;
+  transition: color 1s ease;
+}
+
+#navbar a:hover{
+  color: #1E0342;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards;
+}
+
+/*loading-line*/
+#loading-line{
+  width: 0vw;
+  background-color: black;
+  height: 0.1vw;
+  display: flex;
+  align-content: center;
+  margin-top: 2vh;
+}
