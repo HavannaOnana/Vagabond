@@ -48,3 +48,17 @@ body{
   align-content: center;
   margin-top: 2vh;
 }
+
+/*vagabond title*/
+#vagabond-title{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3vh;
+}
+
+#vagabond-title img{
+  width: 30vw;
+}

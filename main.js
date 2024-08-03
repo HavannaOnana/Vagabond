@@ -14,3 +14,13 @@ navBar.classList.add("fade-in")
 //div for the loading line
 const loadingLine = document.querySelector("#loading-line");
 gsap.to(loadingLine, { duration: 4, width: '80vw' });
+
+//div for the main text vagabond text
+const vagabondTitle = document.querySelector("#vagabond-title");
+vagabondTitle.innerHTML = `
+  <div class="v-text">
+           <h1>Vagabond</h1>
+           <p>Vagabond (Japanese: バガボンド, Hepburn: Bagabondo) is a Japanese<br> epic martial arts manga series written and illustrated by Takehiko Inoue. It portrays a<br> fictionalized account of the life of Japanese swordsman Musashi Miyamoto<br>, based on Eiji Yoshikawa's novel Musashi.</p>
+        </div>
+        <img src="/images/mandk.png" alt="">
+`
