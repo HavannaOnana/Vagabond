@@ -78,3 +78,7 @@ body{
 #vagabond-title img{
   width: 25vw;
 }
+
+#vagabond-title .author{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
