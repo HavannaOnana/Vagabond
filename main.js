@@ -25,5 +25,6 @@ vagabondTitle.innerHTML = `
         </div>
         <img src="/images/mandk.png" alt="">
 `
-
 vagabondTitle.classList.add("fade-in")
+
+//div for the strongest 4 
