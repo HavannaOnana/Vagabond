@@ -136,7 +136,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in;
 }
 
 .strongest-images .strongest-text{
