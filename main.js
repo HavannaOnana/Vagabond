@@ -1,5 +1,9 @@
 import './style.css'
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+// Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
 
 //div for navbar
 const navBar = document.querySelector("#navbar");
@@ -71,10 +75,22 @@ strongestDiv.innerHTML = `
 `
 window.addEventListener('scroll', function(){
   if(window.scrollY > 200){
-    console.log("scrolled past 100")
     gsap.to(strongestDiv,{duration : 3 , marginTop : '10vh' })
   }
   else{
     gsap.to(strongestDiv,{duration : 3 , marginTop : '40vh' })
   }
 })
+
+
+// the manga-panels page
+const mangaPanels = document.querySelector("#mangapanels");
+const mangaPanelOne = document.querySelector(".mangapanel-one");
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 500) {
+    mangaPanelOne.querySelector(".left").classList.add("fade-in");
+    console.log("manga left panel reveal");
+  }
+});
+
