@@ -35,7 +35,7 @@ strongestDiv.innerHTML = `
           <div class="strongest-text">
               <h1>Musashi</h1>
               <p>He was born under the name Takezou Shinmen
-                 (新免 武蔵, Shinmen Takezo) but later changed it to Musashi Miyamoto. </p>
+                 (新免 武蔵, Shinmen Takezo)</p>
                  <h1>2</h1>
           </div>
         </div>
@@ -55,7 +55,7 @@ strongestDiv.innerHTML = `
           <div class="strongest-text">
               <h1>Itto Itosai</h1>
               <p>Ito Ittosai (伊東 一刀斎, Itō Ittōsai), formerly know as Ito Yagoro, 
-                is a legendary swordsman and master of the Itto ryu. </p>
+                is a legendary swordsman </p>
                 <h1>1</h1>
           </div>
         </div>
@@ -64,8 +64,7 @@ strongestDiv.innerHTML = `
           <img src="/images/kojiro.png" alt="">
           <div class="strongest-text">
               <h1>Kojiro</h1>
-              <p>Kojiro is born to Sasaki Sukeyasu and his wife. Late spring of 1583, the Kitanosho 
-                Castle is about to be destroyed in the Battle of Shizugatake.</p>
+              <p>Kojiro is born to Sasaki Sukeyasu and his wife. Late spring of 1583</p>
               <h1>3</h1>
           </div>
         </div>

@@ -122,7 +122,7 @@ body{
   display: flex;
   width: 100vw;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 40vh;
   height: auto;
 }
@@ -142,7 +142,7 @@ body{
 }
 
 .strongest-images .strongest-text{
-  width: 20vw;
+  width: 20%;
   text-align: center;
   position: absolute;
   padding-top: 2vh;
@@ -164,4 +164,59 @@ body{
 .strongest-text p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller
+}
+
+#mangapanels{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 10%;
+}
+
+/* Container for the manga panels */
+.mangapanel-one {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Two columns with different widths */
+  column-gap: 1vw;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+.left {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows of equal height */
+  gap: 1vw; /* Space between rows */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.left img {
+  width: 100%;
+  height: 100%; /* Maintain aspect ratio */
+}
+
+.right img{
+  width: 100%;
+  height: 99.7%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+}
+
+.mangapanel-one img {
+  border: 2px solid black;
+}
+/*adding a media query*/
+@media screen and (max-width : 800px) {
+  .strongest-text{
+    display: none;
+  }
 }
