@@ -185,7 +185,7 @@ body{
   padding: 2%;
 }
 
-.left {
+.mangapanel-one .left {
   display: grid;
   grid-template-rows: 1fr 1fr; /* Two rows of equal height */
   gap: 1vw; /* Space between rows */
@@ -195,27 +195,59 @@ body{
   opacity: 0;
 }
 
-.left img {
+.mangapanel-one .left img {
   width: 100%;
   height: 100%; /* Maintain aspect ratio */
 }
 
-.right img{
+.mangapanel-one .right img{
   width: 100%;
   height: 99.7%;
 }
 
-.right {
+.mangapanel-one .right {
   display: flex;
   align-items: center;
   justify-content: center; 
   width: 100%;
-  opacity: 0;
 }
 
 .mangapanel-one img {
   border: 2px solid black;
 }
+
+/*mangapaneltwo*/
+.mangapanel-two{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mangapanel-two .left img{
+  width: 100%;
+  border: solid 1px black;
+}
+
+.mangapanel-two .right img{
+  width: 50%;
+  border: solid 1px black;
+  height: 100%;
+}
+
+.mangapanel-two .right{
+  display: flex;
+  flex-direction: column;
+}
+
+.mangapanel-two .right2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+
 /*adding a media query*/
 @media screen and (max-width : 800px) {
   .strongest-text{
