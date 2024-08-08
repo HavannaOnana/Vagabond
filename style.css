@@ -260,3 +260,36 @@ body{
     display: none;
   }
 }
+
+.favourite-title{
+  text-align: center;
+  font-family: vagabond;
+  margin-top: 3%;
+  font-size: 5em;
+}
+
+#favourites .musashi{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.musashi .musashi-text h1{
+  font-family: vagabond;
+}
+
+.musashi .musashi-text p{
+  font-family: monserrat;
+  font-size: smaller;
+}
+
+
+#favourites img{
+  width: 30vw;
+  height: auto;
+  border: solid 1px black;
+  object-fit: cover;
+}
+

@@ -108,7 +108,7 @@ mangaPanels.innerHTML = `
 `
 
 const mangaPanelOne =  mangaPanels.querySelector(".mangapanel-one")
-const mangaPanelTwo = mangaPanels.querySelector(".mangapanel-two")
+const mangaPanelTwo = mangaPanels.querySelector(".mangapanel-two");
 
 window.addEventListener('scroll', function() {
   if (window.scrollY > 800) {
