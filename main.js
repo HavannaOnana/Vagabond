@@ -85,12 +85,49 @@ window.addEventListener('scroll', function(){
 
 // the manga-panels page
 const mangaPanels = document.querySelector("#mangapanels");
-const mangaPanelOne = document.querySelector(".mangapanel-one");
+
+mangaPanels.innerHTML = `
+   <div class="mangapanel-one">
+         <div class="left">
+            <img src="/images/mangapanel1.png" alt="">
+            <img src="/images/mangapanel2.png" alt="">
+         </div>
+         <div class="right">
+            <img src="/images/mangapanel3.png" alt="">
+         </div>
+      </div>
+
+      <div class="mangapanel-two">
+         <div class="left">
+           <img src="/images/mangapanel5.png" alt="">
+         </div>
+         <div class="right">
+            <img src="/images/mangapanel4.png" alt="">
+         </div>
+      </div>
+`
+
+const mangaPanelOne =  mangaPanels.querySelector(".mangapanel-one")
+const mangaPanelTwo = mangaPanels.querySelector(".mangapanel-two")
 
 window.addEventListener('scroll', function() {
-  if (window.scrollY > 500) {
+  if (window.scrollY > 800) {
     mangaPanelOne.querySelector(".left").classList.add("fade-in");
     console.log("manga left panel reveal");
   }
+
+  if (window.scrollY > 1300) {
+    mangaPanelOne.querySelector(".right").classList.add("fade-in");
+    console.log("manga right panel reveal");
+  }
+
+  if (window.scrollY > 1700) {
+    mangaPanelTwo.querySelector(".left").classList.add("fade-in");
+  }
+  
+  if (window.scrollY > 1900) {
+    mangaPanelTwo.querySelector(".right").classList.add("fade-in");
+  }
+  
 });
 

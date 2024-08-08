@@ -192,7 +192,7 @@ body{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  opacity: 0;
+  opacity: 1;
 }
 
 .mangapanel-one .left img {
@@ -210,6 +210,7 @@ body{
   align-items: center;
   justify-content: center; 
   width: 100%;
+  opacity: 0;
 }
 
 .mangapanel-one img {
@@ -234,16 +235,23 @@ body{
 }
 
 .mangapanel-two .right img{
-  height: 100vh;
+  object-fit: cover;
 }
 
 .mangapanel-two .right{
   width: 100%;
+  opacity: 0;
 }
 
 .mangapanel-two .left{
   width: 100%;
   height: 100%;
+  opacity: 0;
+}
+
+.mangapanel-two .left img{
+  object-fit: cover;
+  height: 99%;
 }
 
 /*adding a media query*/
