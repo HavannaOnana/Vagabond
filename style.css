@@ -216,37 +216,35 @@ body{
   border: 2px solid black;
 }
 
-/*mangapaneltwo*/
+/* Styling for mangapanel-two container */
 .mangapanel-two{
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Two columns with different widths */
+  column-gap: 1vw;
+  padding: 2vh 2vw;
+  box-sizing: border-box;
 }
 
-.mangapanel-two .left img{
+.mangapanel-two img{
   width: 100%;
-  border: solid 1px black;
+  border: solid 2px black;
 }
 
 .mangapanel-two .right img{
-  width: 50%;
-  border: solid 1px black;
-  height: 100%;
+  height: 100vh;
 }
 
 .mangapanel-two .right{
-  display: flex;
-  flex-direction: column;
-}
-
-.mangapanel-two .right2{
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
 
-
+.mangapanel-two .left{
+  width: 100%;
+  height: 100%;
+}
 
 /*adding a media query*/
 @media screen and (max-width : 800px) {
